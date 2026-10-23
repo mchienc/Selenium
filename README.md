@@ -8,6 +8,7 @@
 - **Mã số sinh viên (MSSV):** *2021xxxx (Sinh viên cập nhật)*
 - **Lớp:** *CNTT (Sinh viên cập nhật)*
 - **Website mục tiêu kiểm thử:** [Swag Labs (SauceDemo)](https://www.saucedemo.com/)
+- **GitHub Repository:** [https://github.com/mchienc/Selenium](https://github.com/mchienc/Selenium)
 - **Link Google Sheet nộp bài:** [Google Sheet Nộp Bài Test](https://docs.google.com/spreadsheets/d/1GyPWJ9lbhoWOO_bew4715lVoxttf727u7ihrD4hobEM/edit?gid=0#gid=0)
 
 ---
