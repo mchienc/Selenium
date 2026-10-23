@@ -257,12 +257,45 @@ tests/test_saucedemo.py::TestSauceDemo::test_07_logout_success PASSED           
 - **Tệp báo cáo trực quan:** Mở tệp `reports/report.html` trên bất kỳ trình duyệt nào để xem thống kê trực quan.
 
 ### 5.2. Hình ảnh minh chứng thực thi (Evidence Screenshots)
-Các ảnh chụp màn hình minh chứng được tự động lưu trong thư mục `screenshots/`:
-- `screenshots/tc01_valid_login.png`: Giao diện sau khi đăng nhập thành công.
-- `screenshots/tc02_locked_user.png`: Thông báo lỗi tài khoản bị khóa.
-- `screenshots/tc03_wrong_password.png`: Thông báo lỗi mật khẩu không trùng khớp.
-- `screenshots/tc04_sort_price_low_to_high.png`: Danh sách sản phẩm được sắp xếp tăng dần theo giá.
-- `screenshots/tc05_cart_verified.png`: Sản phẩm nằm trong giỏ hàng và huy hiệu số lượng.
-- `screenshots/tc06_checkout_complete.png`: Thông báo đặt hàng thành công (`Thank you for your order!`).
-- `screenshots/tc07_logout_success.png`: Điều hướng trở về trang đăng nhập sau khi đăng xuất.
+
+#### 📸 TC01: Đăng nhập thành công với tài khoản hợp lệ
+*Giao diện sau khi đăng nhập thành công vào trang danh sách sản phẩm (/inventory.html):*
+![TC01 - Đăng nhập thành công](screenshots/tc01_valid_login.png)
+
+---
+
+#### 📸 TC02: Đăng nhập thất bại với tài khoản bị khóa
+*Thông báo lỗi hiển thị khi đăng nhập với tài khoản bị khóa (locked_out_user):*
+![TC02 - Tài khoản bị khóa](screenshots/tc02_locked_user.png)
+
+---
+
+#### 📸 TC03: Đăng nhập thất bại khi sai mật khẩu
+*Thông báo lỗi bảo mật hiển thị khi nhập sai mật khẩu:*
+![TC03 - Sai mật khẩu](screenshots/tc03_wrong_password.png)
+
+---
+
+#### 📸 TC04: Sắp xếp danh sách sản phẩm theo giá tăng dần (Low to High)
+*Giao diện hiển thị các mức giá được sắp xếp tăng dần ($7.99 -> $49.99):*
+![TC04 - Sắp xếp theo giá tăng dần](screenshots/tc04_sort_price_low_to_high.png)
+
+---
+
+#### 📸 TC05: Thêm sản phẩm vào giỏ hàng và kiểm tra huy hiệu số lượng
+*Huy hiệu giỏ hàng hiển thị số lượng 1 và sản phẩm nằm trong trang giỏ hàng:*
+![TC05 - Giỏ hàng và huy hiệu số lượng](screenshots/tc05_cart_verified.png)
+
+---
+
+#### 📸 TC06: Quy trình mua hàng & thanh toán End-to-End thành công
+*Thông báo xác nhận hoàn tất đơn hàng (Thank you for your order!):*
+![TC06 - Hoàn tất đặt hàng E2E](screenshots/tc06_checkout_complete.png)
+
+---
+
+#### 📸 TC07: Đăng xuất khỏi hệ thống thành công
+*Giao diện chuyển hướng an toàn về lại trang Đăng nhập sau khi bấm Logout:*
+![TC07 - Đăng xuất thành công](screenshots/tc07_logout_success.png)
+
 
