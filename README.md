@@ -226,47 +226,9 @@ Dự án xây dựng **07 Test Cases** hoàn chỉnh (vượt yêu cầu tối t
 
 ---
 
-## 5. HƯỚNG DẪN CÀI ĐẶT & CHẠY KIỂM THỬ
+## 5. KẾT QUẢ THỰC THI & BÁO CÁO KIỂM THỬ (TEST EXECUTION REPORT)
 
-### 5.1. Yêu cầu môi trường
-- Hệ điều hành: Windows 10/11, macOS hoặc Linux.
-- Đã cài đặt **Python 3.10+** (Kiểm tra bằng: `python --version`).
-- Trình duyệt **Google Chrome** bản mới nhất.
-
-### 5.2. Các bước cài đặt thư viện
-Mở Terminal hoặc Command Prompt tại thư mục dự án và chạy lệnh:
-```bash
-pip install -r requirements.txt
-```
-
-### 5.3. Các phương thức thực thi kiểm thử
-
-#### Cách 1: Chạy toàn bộ kiểm thử ở chế độ ngầm định (Headless - khuyến nghị)
-```bash
-python -m pytest
-```
-*Lưu ý: Chế độ Headless giúp kiểm thử chạy cực nhanh trong nền mà không chiếm dụng màn hình làm việc.*
-
-#### Cách 2: Chạy kiểm thử có hiển thị giao diện trình duyệt (Headed mode)
-```bash
-python -m pytest --headed
-```
-
-#### Cách 3: Chạy thông qua script tiện ích `run_tests.py`
-```bash
-python run_tests.py
-```
-
-#### Cách 4: Chạy riêng một test case cụ thể (Ví dụ chạy TC01)
-```bash
-python -m pytest tests/test_saucedemo.py -k "test_01_valid_login"
-```
-
----
-
-## 6. KẾT QUẢ THỰC THI & BÁO CÁO KIỂM THỬ (TEST EXECUTION REPORT)
-
-### 6.1. Tổng kết kết quả chạy Test
+### 5.1. Tổng kết kết quả chạy Test
 ```
 ============================= test session starts =============================
 platform win32 -- Python 3.13.7, pytest-9.1.1, pluggy-1.7.0
@@ -294,7 +256,7 @@ tests/test_saucedemo.py::TestSauceDemo::test_07_logout_success PASSED           
 - **Thời gian thực thi trung bình:** ~30 giây cho toàn bộ 7 kịch bản end-to-end.
 - **Tệp báo cáo trực quan:** Mở tệp `reports/report.html` trên bất kỳ trình duyệt nào để xem thống kê trực quan.
 
-### 6.2. Hình ảnh minh chứng thực thi (Evidence Screenshots)
+### 5.2. Hình ảnh minh chứng thực thi (Evidence Screenshots)
 Các ảnh chụp màn hình minh chứng được tự động lưu trong thư mục `screenshots/`:
 - `screenshots/tc01_valid_login.png`: Giao diện sau khi đăng nhập thành công.
 - `screenshots/tc02_locked_user.png`: Thông báo lỗi tài khoản bị khóa.
